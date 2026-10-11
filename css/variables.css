@@ -1,0 +1,14 @@
+:root {
+  --green: #b8c220;
+  --green-deep: #97a01a;
+  --orange: #ed5615;
+  --orange-bright: #fa681b;
+  --yellow: #ffd059;
+  --butter: #ffe382;
+  --brown: #8c452b;
+  --cream: #fff4c2;
+  --teal: #2cbf90;
+
+  --display: "Darumadrop One", "Jua", system-ui, sans-serif;
+  --body: "Jua", system-ui, sans-serif;
+}

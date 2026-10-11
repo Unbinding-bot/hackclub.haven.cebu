@@ -1,0 +1,249 @@
+.middle {
+  position: relative;
+  padding: 220px clamp(22px, 6vw, 90px) 130px;
+  background: var(--green) url("../assets/images/bg-middle.webp") center top / cover no-repeat;
+}
+
+.section-intro {
+  max-width: 720px;
+  margin: 0 auto 80px;
+  padding: 30px 34px;
+  border-radius: 30px;
+  background: rgba(151, 160, 26, 0.68);
+  box-shadow: 0 0 22px rgba(93, 109, 12, 0.35);
+  text-align: center;
+}
+
+.section-intro h2,
+.pitch-content h2,
+.faq-inner h2,
+.register h2 {
+  margin: 8px 0 14px;
+  color: #fff;
+  font-family: var(--display);
+  font-size: clamp(46px, 6vw, 82px);
+  line-height: 0.86;
+  text-shadow: 0 0 8px var(--green-deep);
+}
+
+.section-intro p {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(19px, 2vw, 28px);
+  line-height: 1.25;
+}
+
+@media (max-width: 1100px) and (min-width: 851px) {
+  .middle {
+    padding: 130px 38px 180px;
+  }
+
+  .section-intro {
+    max-width: 330px;
+    margin: 0 0 68px 10%;
+    padding: 22px 24px;
+    border-radius: 22px;
+  }
+
+  .section-intro h2 {
+    font-size: clamp(32px, 4vw, 44px);
+  }
+
+  .section-intro p {
+    font-size: 15px;
+  }
+
+  .perk-grid {
+    grid-template-columns: repeat(2, minmax(0, 320px));
+    max-width: 750px;
+    gap: 78px 112px;
+  }
+
+  .wood-card,
+  .wood-card:nth-child(3) {
+    width: auto;
+    min-height: 270px;
+    padding: 58px 34px 24px;
+  }
+
+  .wood-card:nth-child(3) {
+    grid-column: 1;
+    justify-self: stretch;
+  }
+
+  .wood-card h3 {
+    top: 16px;
+    font-size: clamp(29px, 3.2vw, 40px);
+  }
+
+  .photo-pair {
+    gap: 10px;
+  }
+
+  .photo-pair img {
+    height: 105px;
+    border-width: 3px;
+    border-radius: 12px;
+  }
+
+  .wood-card p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
+
+.perk-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 42px;
+  gap: 70px;
+  scroll-margin-top: 180px;
+}
+
+#about,
+#experience {
+  scroll-margin-top: 180px;
+}
+
+.wood-card {
+  position: relative;
+  min-height: 460px;
+  padding: 80px 52px 42px;
+  border: 5px solid rgba(255, 255, 255, 0.72);
+  border-radius: 24px;
+  background: #f4c8a3 url("../assets/images/about/sign-back.webp") center / cover no-repeat;
+  box-shadow: 0 25px 35px rgba(72, 74, 7, 0.18);
+  color: var(--brown);
+  transform: rotate(-1deg);
+}
+
+.wood-card h3 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin: 0;
+  padding: 7px 16px;
+  border-radius: 10px;
+  background: #b8784f;
+  color: #fff;
+  font-family: var(--display);
+  font-size: clamp(34px, 4vw, 58px);
+  text-shadow: 0 0 4px rgba(116, 66, 29, 0.6);
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.wood-card:nth-child(3) {
+  grid-column: 1;
+  width: auto;
+  justify-self: stretch;
+}
+
+.offset-card {
+  transform: translateY(85px) rotate(1deg);
+}
+
+.photo-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.photo-pair img {
+  width: 100%;
+  height: 190px;
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.wood-card p {
+  max-width: 500px;
+  margin: 22px auto 0;
+  font-size: 21px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.pitch-area {
+  display: grid;
+  grid-template-columns: 0.38fr 0.62fr;
+  align-items: end;
+  max-width: 1200px;
+  margin: 180px auto 40px;
+  gap: 15px;
+}
+
+.pitch-mascot {
+  width: 100%;
+  align-self: end;
+}
+
+.pitch-content h2 {
+  text-align: center;
+}
+
+.bubble {
+  margin: 22px 0;
+  padding: 26px 34px;
+  /* border-radius: 50% 46% 48% 52% / 58% 52% 48% 42%; */
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 25px rgba(77, 63, 9, 0.16);
+  color: var(--orange);
+  font-size: clamp(18px, 2vw, 28px);
+  line-height: 1.28;
+}
+
+.bubble-right {
+  margin-left: 10%;
+  transform: rotate(1deg);
+}
+
+mark {
+  padding: 0.02em 0.2em;
+  border-radius: 0.4em;
+  background: var(--yellow);
+  color: inherit;
+}
+
+@media (max-width: 1100px) and (min-width: 851px) {
+  .perk-grid {
+    grid-template-columns: repeat(2, minmax(0, 320px));
+    max-width: 750px;
+    gap: 78px 112px;
+  }
+
+  .wood-card,
+  .wood-card:nth-child(3) {
+    width: auto;
+    min-height: 270px;
+    padding: 58px 34px 24px;
+  }
+
+  .wood-card:nth-child(3) {
+    grid-column: 1;
+    justify-self: stretch;
+  }
+
+  .wood-card h3 {
+    top: 16px;
+    font-size: clamp(29px, 3.2vw, 40px);
+  }
+
+  .photo-pair {
+    gap: 10px;
+  }
+
+  .photo-pair img {
+    height: 105px;
+    border-width: 3px;
+    border-radius: 12px;
+  }
+
+  .wood-card p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}

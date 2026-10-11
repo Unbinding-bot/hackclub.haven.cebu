@@ -1,0 +1,53 @@
+.nav {
+  position: fixed;
+  z-index: 100;
+  inset: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px clamp(18px, 4vw, 64px);
+  pointer-events: none;
+}
+
+.nav::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: min(620px, 56vw);
+  height: 190px;
+  background: url("../assets/images/nav-banner.webp") top right / contain no-repeat;
+}
+
+.nav-logo {
+  position: relative;
+  z-index: 1;
+  width: 116px;
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.nav-logo:hover {
+  transform: translateY(-2px) rotate(-2deg);
+}
+
+.nav nav {
+  display: flex;
+  gap: clamp(14px, 2.2vw, 38px);
+  pointer-events: auto;
+}
+
+.nav nav a {
+  color: var(--yellow);
+  font-family: var(--display);
+  font-size: clamp(20px, 2.2vw, 34px);
+  text-shadow: 0 2px 0 rgba(99, 54, 10, 0.18);
+  transition: 0.18s;
+}
+
+.nav nav a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
