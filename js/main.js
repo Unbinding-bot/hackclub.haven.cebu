@@ -2,6 +2,7 @@ import { navigation } from "./components/navigation.js";
 import { hero } from "./components/hero.js";
 import { about } from "./components/about.js";
 import { events } from "./components/events.js";
+import { partners } from "./components/partners.js";
 import { faq } from "./components/faq.js";
 import { footer } from "./components/footer.js";
 
@@ -17,6 +18,7 @@ app.innerHTML = `
     ${hero()}
     ${about()}
     ${events()}
+    ${partners()}
     ${faq()}
   </main>
   ${footer()}
