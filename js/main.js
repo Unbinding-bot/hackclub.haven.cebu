@@ -7,8 +7,6 @@ import { faq } from "./components/faq.js";
 import { footer } from "./components/footer.js";
 
 import { setupNavigation } from "./ui/navigation.js";
-import { setupRegistration } from "./ui/registration.js";
-import { createToast } from "./ui/toast.js";
 
 const app = document.getElementById("app");
 
@@ -24,6 +22,4 @@ app.innerHTML = `
   ${footer()}
 `;
 
-const toast = createToast();
 setupNavigation();
-setupRegistration(toast);

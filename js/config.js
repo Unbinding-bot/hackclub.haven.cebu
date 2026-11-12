@@ -5,9 +5,6 @@ export const SITE_CONFIG = {
   location: "Cebu City, Philippines",
   attendeeTarget: "100+",
 
-  // Your Google Apps Script endpoint
-  registrationEndpoint: "https://script.google.com/macros/s/AKfycbySABIkc5KhJnDi3iab8ZKL3zjVqS-w6cAbo05N2ub2Np9L5JKSVlwSy-BE1WFpeLlfmw/exec",
-
-  // Hack Club Haven signup form — users are redirected here after your form
+  // Hack Club Haven signup form — users register directly here
   hackclubFormUrl: "https://forms.hackclub.com/haven-signup?event=reckcxvFOWyevRNH0",
 };
